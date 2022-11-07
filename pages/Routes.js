@@ -8,12 +8,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import  App  from './Beranda';
 import  Content  from './Content';
 import  Upload  from './Upload';
+import  Login  from './Login';
+import  Register  from './Register';
 // import { App as AboutPage} from './pages/Upload';
 
 
-const Yuhuua = () => {
+const Routes = () => {
     return (
-        <View><Text>HAHAHA</Text></View>
+        <View><Text>Routes Page</Text></View>
     );
 }
 
@@ -26,9 +28,11 @@ function MyStack() {
     <NavigationContainer>
         <Stack.Navigator>
             <Stack.Screen name="Home" component={App} options={{title: 'Welcome'}} />
-            <Stack.Screen name="Yoyo" component={Yuhuua} options={{title: 'Welcome'}} />
+            <Stack.Screen name="Routes" component={Routes} options={{title: 'Welcome'}} />
             <Stack.Screen name="Content" component={Content} />
             <Stack.Screen name="Upload" component={Upload} />
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="Register" component={Register} />
         </Stack.Navigator>
     </NavigationContainer>
   );
