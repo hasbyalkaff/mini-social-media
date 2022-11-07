@@ -1,6 +1,19 @@
 
 import React from 'react';
-import { View, Text, Image, ScrollView, StyleSheet, Button, TouchableHighlight } from 'react-native';
+import { View, Text, Image, ScrollView, StyleSheet, Button, TouchableHighlight, TextInput } from 'react-native';
+
+const Comment = () => {
+    return (
+        <View>
+            <View>
+                <Text>Mamat</Text>
+            </View>
+            <View>
+                <Text>Ini Komenrtar nya</Text>
+            </View>
+        </View>
+    );
+}
 
 const Content = () => { // child component
     const data = {
@@ -14,6 +27,18 @@ const Content = () => { // child component
                 style={{ width: '100%', height: 200}} 
                 resizeMode="contain"/>
             <Text style={styles.name}>{data.caption}</Text>
+            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <View style={{flex: 1, height: 1, backgroundColor: 'black'}} />
+            </View>
+            <View>
+                <Comment />
+                <Comment />
+                <Comment />
+            </View>
+            <View>
+                <TextInput />
+                <Button />
+            </View>
         </ScrollView >
     );
 }
