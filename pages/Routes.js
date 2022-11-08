@@ -27,10 +27,10 @@ function MyStack() {
   return (
     <NavigationContainer>
         <Stack.Navigator>
-            <Stack.Screen name="Home" component={App} options={{title: 'Welcome'}} />
+            <Stack.Screen name="Home" component={App} options={{title: 'Beranda'}} />
+            <Stack.Screen name="Content" component={Content} options={{title: 'Content'}} />
+            <Stack.Screen name="Upload" component={Upload} options={{title: 'Upload'}} />
             <Stack.Screen name="Routes" component={Routes} options={{title: 'Welcome'}} />
-            <Stack.Screen name="Content" component={Content} />
-            <Stack.Screen name="Upload" component={Upload} />
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Register" component={Register} />
         </Stack.Navigator>
